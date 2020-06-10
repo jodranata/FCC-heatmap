@@ -1,0 +1,40 @@
+@import '~react-vis/dist/styles/legends';
+.container {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #292929;
+  padding: 25px 10px;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.782);
+}
+
+.chart-svg p {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.chart-svg .rv-xy-plot {
+  position: relative;
+}
+
+.chart-svg .rv-xy-plot rect:hover {
+  stroke-width: 1.5;
+  stroke: #292929 !important;
+}
+
+.chart-svg #tooltip {
+  position: absolute;
+  background-color: #f0f0f0;
+  color: #292929;
+  padding: 8px 10px;
+  width: 150px;
+  transform: translateX(20%);
+  opacity: 0.9;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.782);
+  border-radius: 14px;
+  transform: translateY(25px);
+  font-weight: 600;
+}
